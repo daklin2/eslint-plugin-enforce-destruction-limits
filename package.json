@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-enforce-destruction-limits",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Enforce not accessing properties deeper than you want.",
     "main": "lib/index.js",
     "scripts": {
