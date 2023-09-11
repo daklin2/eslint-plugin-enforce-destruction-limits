@@ -44,7 +44,7 @@ To use this rule in your ESLint configuration, add it to your `.eslintrc.js` or 
 {
   "plugins": ["enforce-destruction-limits"],
   "rules": {
-    "eslint-plugin-enforce-destruction-limits/enforce-destruction-limits": [
+    "enforce-destruction-limits/enforce-destruction-limits": [
         "error",
         { "patterns": ["contacts.persons", "contacts.*.Jimmy"] }
     ]
