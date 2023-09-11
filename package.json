@@ -1,0 +1,27 @@
+{
+    "name": "eslint-plugin-enforce-destruction-limits",
+    "version": "1.0.0",
+    "description": "Enforce not accessing properties deeper than you want.",
+    "main": "lib/index.js",
+    "scripts": {
+      "test": "jest tests"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/daklin2/eslint-plugin-enforce-destruction-limits"
+    },
+    "keywords": ["eslint", "custom-rule", "destruction", "enforce", "quality"],
+    "author": "daklin2",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/daklin2/eslint-plugin-enforce-destruction-limits/issues"
+    },
+    "homepage": "https://github.com/daklin2/eslint-plugin-enforce-destruction-limits#readme",
+    "peerDependencies": {
+        "eslint": "8.49.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.49.0",
+        "jest": "^29.6.4"
+    }
+}
