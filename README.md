@@ -13,15 +13,17 @@ You can provide "patterns" which will work as a limit for nesting.
 Patterns might be provided as simple string, wildcards or RegExp
 
 ex:
-```bash
-"contacts.person" // string
-Allow: const { siblings } = contacts.persons
-Forbid: const { Jimmy } = contacts.persons.siblings
+```js
+// string: "contacts.person"
+
+/* Allow: */ const { siblings } = contacts.persons
+/* Forbid: */ const { Jimmy } = contacts.persons.siblings
 ```
-```bash
-"contacts.*.Jimmy" // wildcards
-Allow: const { info } = contacts.persons.siblings.Jimmy
-Forbid: const { phone } = contacts.persons.siblings.Jimmy.info
+```js
+// wildcards: "contacts.*.Jimmy"
+
+/* Allow: */ const { info } = contacts.persons.siblings.Jimmy
+/* Forbid: */ const { phone } = contacts.persons.siblings.Jimmy.info
 ```
 And same with any RegExp you want to use.
 
@@ -40,7 +42,7 @@ yarn add -D eslint-plugin-enforce-destruction-limits
 **Configuration**
 To use this rule in your ESLint configuration, add it to your `.eslintrc.js` or `.eslintrc.json` file:
 
-```bash
+```json
 {
   "plugins": ["enforce-destruction-limits"],
   "rules": {
